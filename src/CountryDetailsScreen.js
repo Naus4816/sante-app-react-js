@@ -14,8 +14,7 @@ const CountryDetails = () => {
   const [carbonFootprint, setCarbonFootprint] = useState(null);
   const [departureCountries, setDepartureCountries] = useState([]);
 
-  const ip = "10.192.5.233";
-  const apiURL = `http://${ip}:8888/api`;
+  const apiURL = process.env.REACT_APP_API_URL;
 
   const getStoredUserId = async () => {
     try {
