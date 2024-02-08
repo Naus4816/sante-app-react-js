@@ -17,8 +17,6 @@ const ResetPasswordScreen = () => {
       return;
     }
     
-    alert(password);
-    alert(email);
     try {
       // Envoi de la requête à l'API
       const response = await fetch(`${apiURL}/password/new-password`, {
