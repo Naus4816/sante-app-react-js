@@ -33,6 +33,7 @@ const RegisterScreen = () => {
       console.log(data);
 
       if (response.status === 201) {
+        alert("Un code vous a été envoyé pour valider votre compte");
         navigate(`/verify-mail-code`);
       } else {
         setErrorMessage(data.message || 'Erreur lors de l’inscription');
